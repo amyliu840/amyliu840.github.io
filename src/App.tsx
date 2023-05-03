@@ -36,8 +36,6 @@ interface DataType {
 function App() {
   const [data, setData] = useState([]);
   const [totalCount, setTotalCount] = useState(0);
-  const [top, setTop] = useState<TablePaginationPosition | "none">("none");
-  const [bottom, setBottom] = useState<TablePaginationPosition>("bottomCenter");
   const [loading, setLoading] = useState<boolean>(false);
   const [pagination, setPagination] = useState<TablePaginationConfig>({
     current: 1,
@@ -177,7 +175,6 @@ function App() {
           {...tableProps}
           dataSource={data}
           columns={columns}
-          // pagination={{ position: [top as TablePaginationPosition, bottom] }}
           pagination={pagination}
           onChange={handleTableChange}
         />
