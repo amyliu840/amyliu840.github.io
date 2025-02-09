@@ -1,5 +1,13 @@
 import React from "react";
-import { Card, List } from "semantic-ui-react";
+import {
+  Header,
+  CardHeader,
+  CardDescription,
+  CardContent,
+  Card,
+  List,
+  Image,
+} from "semantic-ui-react";
 import "./Project.css";
 
 function Project() {
@@ -7,41 +15,35 @@ function Project() {
     <section id="project" className="project-container">
       <h2>Projects</h2>
       <Card>
-        <Card.Content>
-          <Card.Header>Voya Enrollment</Card.Header>
-          <Card.Description>Financial Enrollment Tool</Card.Description>
-          <List bulleted>
-            <List.Item>
-              <a
-                href="https://enroll.voya.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voya Enrollment Tool
-              </a>
-            </List.Item>
-          </List>
-        </Card.Content>
+        <Image src="./search.jpg" width="300" wrapped ui={false} />
+        <CardContent>
+          <CardHeader>GitHub User Search</CardHeader>
+          <CardDescription>
+            <a href="https://amyliu840.github.io/github-user-search/">
+              <Header as="h4" color="blue">
+                Project Link
+              </Header>
+            </a>
+          </CardDescription>
+        </CardContent>
       </Card>
       <br />
       <Card>
-        <Card.Content>
-          <Card.Header>Car Dealer App</Card.Header>
-          <Card.Description>
-            An application to display dealer's cars
-          </Card.Description>
-          <List bulleted>
-            <List.Item>
-              <a
-                href="https://github.com/amyliu840/car-dealer-app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+        <Image src="./car.jpg" width="300" wrapped ui={false} />
+        <CardContent>
+          <CardHeader>Car Dealer App</CardHeader>
+          <CardDescription>
+            <a
+              href="https://github.com/amyliu840/car-dealer-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Header as="h4" color="blue">
                 Project Github Link
-              </a>
-            </List.Item>
-          </List>
-        </Card.Content>
+              </Header>
+            </a>
+          </CardDescription>
+        </CardContent>
       </Card>
     </section>
   );

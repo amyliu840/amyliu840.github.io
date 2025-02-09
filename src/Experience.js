@@ -5,6 +5,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import React from "react";
 import "./Experience.css";
+import { Header } from "semantic-ui-react";
 
 export const description = {
   pfizer: [
@@ -53,8 +54,9 @@ const Experience = () => {
           date="March 2017 - January 2019"
         >
           <p>
-            Senior Frontend Engineer
-            <br />
+            <Header as="h4" className="mb-0">
+              Senior Frontend Engineer
+            </Header>
             <i>Pfizer</i>
           </p>
           <ul>
@@ -71,7 +73,9 @@ const Experience = () => {
           iconStyle={{ background: dotColor, color: "#fff" }}
         >
           <p>
-            Senior Frontend Engineer <br />
+            <Header as="h4" className="mb-0">
+              Senior Frontend Engineer
+            </Header>
             <i>Voya Financial</i>
           </p>
           <ul>
@@ -88,8 +92,9 @@ const Experience = () => {
           iconStyle={{ background: dotColor, color: "#fff" }}
         >
           <p>
-            Full Stack Engineer
-            <br />
+            <Header as="h4" className="mb-0">
+              Full Stack Engineer
+            </Header>
             <i>Northwestern Mutual</i>
           </p>
           <ul>

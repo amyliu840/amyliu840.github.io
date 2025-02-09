@@ -119,14 +119,15 @@ const App = () => {
           </a>{" "}
           and{" "}
           <a
-            href="https://react.semantic-ui.com/"
+            href="http
+            s://react.semantic-ui.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Semantic UI React
           </a>
         </div>
-        <div>Copyright &copy; 2023 Amy Liu</div>
+        <div>Copyright &copy; 2023 - 2025 Amy Liu</div>
       </footer>
       <div className="scroll-indicator-wrapper">
         {isScrollDown ? (
