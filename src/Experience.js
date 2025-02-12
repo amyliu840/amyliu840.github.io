@@ -53,15 +53,15 @@ const Experience = () => {
           iconStyle={{ background: dotColor, color: "#fff" }}
           date="March 2017 - January 2019"
         >
-          <p>
+          <div>
             <Header as="h4" className="mb-0">
               Senior Frontend Engineer
             </Header>
             <i>Pfizer</i>
-          </p>
+          </div>
           <ul>
-            {description["pfizer"].map((item) => (
-              <li>{item}</li>
+            {description["pfizer"].map((item, index) => (
+              <li key={`pfizer-${index}`}>{item}</li>
             ))}
           </ul>
         </VerticalTimelineElement>
@@ -72,15 +72,15 @@ const Experience = () => {
           contentArrowStyle={{ borderRight: "7px solid " + cardColor }}
           iconStyle={{ background: dotColor, color: "#fff" }}
         >
-          <p>
+          <div>
             <Header as="h4" className="mb-0">
               Senior Frontend Engineer
             </Header>
             <i>Voya Financial</i>
-          </p>
+          </div>
           <ul>
-            {description["voya-financial"].map((item) => (
-              <li>{item}</li>
+            {description["voya-financial"].map((item, index) => (
+              <li key={`voya-financial-${index}`}>{item}</li>
             ))}
           </ul>
         </VerticalTimelineElement>
@@ -91,15 +91,15 @@ const Experience = () => {
           contentArrowStyle={{ borderRight: "7px solid " + cardColor }}
           iconStyle={{ background: dotColor, color: "#fff" }}
         >
-          <p>
+          <div>
             <Header as="h4" className="mb-0">
               Full Stack Engineer
             </Header>
             <i>Northwestern Mutual</i>
-          </p>
+          </div>
           <ul>
-            {description["northwestern-mutual"].map((item) => (
-              <li>{item}</li>
+            {description["northwestern-mutual"].map((item, index) => (
+              <li key={`northwestern-mutual-${index}`}>{item}</li>
             ))}
           </ul>
         </VerticalTimelineElement>
