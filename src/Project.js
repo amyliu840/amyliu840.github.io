@@ -5,7 +5,6 @@ import {
   CardDescription,
   CardContent,
   Card,
-  List,
   Image,
 } from "semantic-ui-react";
 import "./Project.css";

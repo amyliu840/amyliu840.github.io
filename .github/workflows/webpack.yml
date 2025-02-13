@@ -27,6 +27,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    # Treat warnings as warnings
+    env:
+      CI: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4
