@@ -4,16 +4,14 @@ import Experience from "./Experience";
 import Project from "./Project";
 import "./App.css";
 import Typical from "react-typical";
+import { isAtBottom } from "./utils";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isScrollDown, setIsScrollDown] = useState(true);
 
   const chooseScrollIndicator = () => {
-    if (
-      window.innerHeight + window.scrollY >=
-      document.body.offsetHeight - 24
-    ) {
+    if (isAtBottom()) {
       setIsScrollDown(false);
     } else {
       setIsScrollDown(true);
@@ -25,8 +23,9 @@ const App = () => {
       const sections = document.querySelectorAll("section");
       for (const section of sections) {
         const { top, bottom } = section.getBoundingClientRect();
-        if (top < window.innerHeight && bottom > 24) {
+        if (top > -12 && bottom > 24) {
           setActiveSection(section.getAttribute("id"));
+          return
         }
       }
       chooseScrollIndicator();
@@ -57,7 +56,7 @@ const App = () => {
     <div className="App">
       <nav className="header-nav-wrapper">
         <div className="nav-link-container">
-          {["about-me", "experience", "project"].map((item) => (
+          {["about-me", "project", "experience"].map((item) => (
             <a
               href={`#${item}`}
               key={item}

@@ -6,11 +6,6 @@
   justify-content: center;
 }
 
-.about-me-container .card-content-container {
-  display: flex;
-  flex-direction: row;
-}
-
 .about-me-container .card-content-container h2 {
   border-bottom: 1px solid lightgrey;
   padding: 1rem;
