@@ -1,5 +1,5 @@
 :root {
-  --app-primay-color: #cbede7;
+  --app-primary-color: #cbede7;
   --app-header-color: #ffc4c4;
   --app-card-color: #ceeeff;
   --app-warm-color: #e8dbff;
@@ -16,7 +16,7 @@
   background-size: 225%;
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: var(--app-primay-color);
+  background-color: var(--app-primary-color);
   height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -31,7 +31,7 @@
   position: sticky;
   top: 2rem;
   z-index: 1000;
-  background-color: var(--app-primay-color);
+  background-color: var(--app-primary-color);
   box-shadow: 0px 19px 143px rgba(0, 0, 0, 0.2);
   width: 50%;
   margin: 0 auto;
@@ -140,7 +140,7 @@
 
 .header-nav-wrapper a:hover,
 .header-nav-wrapper a:focus {
-  background-color: var(--app-primay-color);
+  background-color: var(--app-primary-color);
   border-radius: 0.25rem;
   box-shadow: 0px 19px 143px rgba(0, 0, 0, 0.3);
 }
@@ -194,4 +194,12 @@ footer {
 /** common css **/
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-1 {
+  gap: 2rem;
 }

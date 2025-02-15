@@ -97,8 +97,10 @@ const App = () => {
         </a>
       </section>
       <AboutMe />
-      <Experience />
+      <br />
       <Project />
+      <br />
+      <Experience />
       <footer>
         <div style={{ margin: ".25rem 0" }}>
           Powered By{" "}
@@ -115,7 +117,7 @@ const App = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Creat React App
+            Create React App
           </a>{" "}
           and{" "}
           <a
