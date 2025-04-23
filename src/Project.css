@@ -1,0 +1,21 @@
+.project-container {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: var(--max-content-width);
+  text-align: center;
+}
+
+.project-container h2 {
+  margin: 1.5rem;
+}
+
+.project-container .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-container .card-container .ui.card {
+  margin: 0;
+}
